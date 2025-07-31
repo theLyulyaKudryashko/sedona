@@ -1,7 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «{{Sedona}}»
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+* Студент: [{{Юлия Фролова}}]({{https://htmlacademy.ru/profile/thelylyakydryashko}}).
 
 ---
 
