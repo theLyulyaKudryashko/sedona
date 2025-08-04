@@ -63,9 +63,11 @@
           </li>
         </ol>
       </header>
+    <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <section class="filter-container">
       <fieldset class="catalog-filter-checkbox">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
+
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -89,9 +91,11 @@
                 </label>
               </li>
             </ul>
+
           </fieldset>
        <fieldset class="catalog-filter-radio">
             <legend class="catalog-filter-title">Тип Жилья:</legend>
+
             <ul class="catalog-filter-radio-list">
               <li class="catalog-filter-radio-item">
                 <label class="control">
@@ -116,10 +120,11 @@
                 </label>
               </li>
             </ul>
+
           </fieldset>
           <fieldset class="catalog-filter-group">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+
               <ul class="catalog-filter-price-list">
                 <li>
             <label class="catalog-filter-label label-1" for="min-price">
@@ -144,12 +149,14 @@
                 </div>
               </div>
             </div>
+
           </fieldset>
             <div class="catalog-filter-price-buttons">
-            <button class="catalog-filter-yesbutton button-blue" type="post">Применить</button>
-            <button class="catalog-filter-nobutton" type="post">Сбросить</button>
+            <button class="catalog-filter-yesbutton button-blue" type="submit">Применить</button>
+            <button class="catalog-filter-nobutton" type="submit">Сбросить</button>
             </div>
-      </section>
+         </section>
+      </form>
   </section>
   <section class="heading-filters">
     <div class="heading-filters-container">
@@ -266,12 +273,12 @@
 </main>
   </div>
   <footer>
-    <section class="mails-index">
+    <section class="mails-index mails-no-background">
       <h2 class="title-emails">Подпишитесь на рассылку</h2>
       <p class="description-mails">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/" method="post" name="email">
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <label for="form-email" class="visually-hidden" hidden>Введите ваш email</label>
-        <input type="email" placeholder="Ваш e-mail" id="form-email" required class="placeholder-emails">
+        <input type="email" placeholder="Ваш e-mail" id="form-email" name="form-email" required class="placeholder-emails placeholder-emails-no-background-image">
         <button type="submit" class="button-mails button-blue">Подписаться</button>
       </form>
     </section>
