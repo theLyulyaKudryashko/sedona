@@ -538,7 +538,7 @@ body{
   margin: 0 362.5px 60px 362.5px;
 }
 .mails-background{
-  background-image: url("/images/subcribtion_emails_background.jpg");
+  background-image: url("/images/subcribtion-email-background.jpg");
   background-color: blue;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -1319,6 +1319,7 @@ input[type="checkbox"]:active{
   height: 100%;
   background-color: #F2F2F2CC;
   z-index: 4;
+  display: none;
 }
 
 .modal{
