@@ -142,7 +142,7 @@
               </fieldset>
               <div class="catalog-filter-price-buttons">
                 <button class="catalog-filter-yesbutton button-blue" type="submit">Применить</button>
-                <button class="catalog-filter-nobutton" type="submit">Сбросить</button>
+                <button class="catalog-filter-nobutton" type="reset">Сбросить</button>
               </div>
             </div>
           </form>
@@ -150,26 +150,24 @@
       <section class="heading-filters">
         <div class="heading-filters-container">
           <h2 class="heading-filters-result">Найдено гостиниц: 38</h2>
-          <form class="heading-filters-sort">
             <label for="price" class="visually-hidden">Сортировка</label>
             <select name="heading-filters-price text-price" id="price">
               <option class="text-price" value="mix-price">Сначала дешёвые</option>
               <option class="text-price" value="max-price">Сначала дорогие</option>
             </select>
-          </form>
           <div class="filters-view">
-            <button class="heading-filters-viewbutton" type="submit" name="see-by-groups">
-              <span class="visually-hidden">Группами</span>
+            <a class="heading-filters-viewbutton" href="catalog.html?view=tile">
+              <span class="visually-hidden">Плитками</span>
               <svg class="view-button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
-            </button>
-            <button class="heading-filters-viewbutton" type="submit" name="see-by-big">
+            </a>
+            <a class="heading-filters-viewbutton" href="catalog.html?view=card">
               <svg class="view-button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a2"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
-              <span class="visually-hidden">С развёрнутым описанием</span>
-            </button>
-            <button class="heading-filters-viewbutton" type="submit" name="see-by-list">
+              <span class="visually-hidden">Карточками</span>
+            </a>
+            <a class="heading-filters-viewbutton" href="catalog.html?view=list">
               <svg class="view-button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a1"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
               <span class="visually-hidden">Списком</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
