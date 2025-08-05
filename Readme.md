@@ -1,6 +1,6 @@
-# Личный проект «{{Sedona}}»
+# Личный проект «Sedona»
 
-* Студент: [{{Юлия Фролова}}]({{https://htmlacademy.ru/profile/thelylyakydryashko}}).
+* Студент: [Юлия Фролова]({{https://htmlacademy.ru/profile/thelylyakydryashko}}).
 
 ---
 
