@@ -1,16 +1,17 @@
 @font-face {
-  font-family: PT-Sans;
+  font-family: "PT-Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  src: url("/fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
 }
 
 @font-face {
-  font-family: PT-Sans;
+  font-family: "PT-Sans", sans-serif;
   font-weight: 700;
-  src: url("/fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap
+  src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
+  font-style: normal;
 }
 
 /*Данный шрифт используется в каталоге для галочек*/
@@ -30,7 +31,7 @@ body{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  background-color: white;
+  background-color: #ffffff;
   color: #333333;
   display: flex;
   flex-direction: column;
@@ -56,8 +57,8 @@ footer{
   z-index: 2;
   position: relative;
   margin-left: 70px;
-
 }
+
 .navigation {
   display: flex;
   width: 1200px;
@@ -67,10 +68,9 @@ footer{
   display: flex;
   flex-wrap: wrap;
   max-width: 600px;
-  margin: 0;
+  margin: 0 30px 0 27px;
   padding: 0;
   list-style-type: none;
-  margin-left: 30px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -79,12 +79,14 @@ footer{
 .navigation-link {
   display: block;
   padding: 20px 16px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT-Sans", sans-serif;
   text-align: center;
-  color: #000;
+  color: #000000;
   text-decoration: none;
   position: relative;
   border-bottom: 2px solid transparent;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 
@@ -151,8 +153,8 @@ footer{
 }
 
 .navigation-logo-index{
-  background-color: blue;
-  background-image: url("/images/index-background.png");
+  background-color: #0000ff;
+  background-image: url("/images/index-background.jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
@@ -167,8 +169,8 @@ footer{
 }
 .favotites-icon{
   background-color: rgba(125, 181, 79, 1);
-  color: #fff;
-  border-radius: 100vw;
+  color: #ffffff;
+  border-radius: 100vh;
   font-size: 10px;
   z-index: 1;
   position: absolute;
@@ -184,16 +186,14 @@ footer{
 }
 .button-go{
   background-color: rgba(117, 97, 87, 1);
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   border-radius: 4px;
-  padding: 0;
   padding: 8px 37px;
-  margin: 14px 0;
-  margin-right: 70px;
+  margin: 14px 70px 0 0;
   font-size: 16px;
   display: block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT-Sans", sans-serif;
   text-align: center;
   text-decoration: none;
   position: relative;
@@ -206,7 +206,7 @@ footer{
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #000;
+  fill: #000000;
 }
 main{
   text-align: center;
@@ -222,18 +222,16 @@ main{
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
-  color: black;
-  margin: 0;
+  color: #000000;
   padding: 0;
   margin: 69px 290px 25px 290px;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .text-heading-advantages{
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  margin: 0;
   padding: 0;
   margin: 25px 274.5px 90px 274.5px;
 }
@@ -246,19 +244,16 @@ main{
   color: #000000;
   margin: 0;
   padding: 0;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .text-heading-interest{
-  margin: 0;
   padding: 0;
   margin: 20px 0 59px 0;
   font-size: 22px;
   line-height: 26px;
 }
-ul{
-  padding-inline-start: 0;
-}
+
 .advantages-text{
   align-items: center;
   justify-self: center;
@@ -283,12 +278,11 @@ ul{
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
-  color: black;
+  color: #000000;
   padding: 0;
-  margin: 0;
   margin: 112.5px 112.5px 0 112.5px;
   position: relative;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .advantages-title-combo{
@@ -296,12 +290,11 @@ ul{
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   padding: 0;
-  margin: 0;
-  margin: 102px 112.5px 0px 112.5px;
+  margin: 102px 112.5px 0 112.5px;
   position: relative;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .advantages-title::after{
@@ -377,7 +370,6 @@ ul{
 }
 .advantages-title-live{
   padding: 0;
-  margin: 0;
   margin: 26px 85px 30px;
   font-weight: 700;
   font-family: "PT-Sans", sans-serif;
@@ -388,7 +380,6 @@ ul{
 
 .advantages-description-live{
   padding: 0;
-  margin: 0;
   margin: 27px 85px 81px;
 }
 
@@ -402,7 +393,7 @@ ul{
 
 .go-here{
   margin: 64px 347.5px 20px 347.5px;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -415,18 +406,19 @@ ul{
 }
 
 .button-search{
+  display: block;
   font-size: 20px;
   line-height: 36px;
-  margin: 0;
   padding: 10px 50px 16px;
-  margin: 54px 0 96px 0;
+  margin: 54px auto 96px auto;
   background-color: rgba(117, 97, 87, 1);
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
   font-weight: 700;
+  max-width: 376px;
 }
 .interest{
   margin: 96px 304px 108px;
@@ -436,7 +428,7 @@ ul{
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 footer{
@@ -450,6 +442,7 @@ footer{
   border-bottom-left-radius: 4px;
   border: none;
   margin: 0;
+  font-family: "PT-Sans", sans-serif;
 }
 .placeholder-emails:disabled{
   opacity: 0.6;
@@ -568,7 +561,7 @@ footer{
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
-  color: white;
+  color: #ffffff;
   padding: 8px 50px 8px 50px;
   border: none;
   border-top-right-radius: 4px;
@@ -576,7 +569,7 @@ footer{
   text-transform: uppercase;
   cursor: pointer;
   font-weight: 700;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .mails{
@@ -585,7 +578,7 @@ footer{
 
 .phone{
   display: block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT-Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -690,7 +683,7 @@ footer{
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 49px 0px 41px;
+  padding: 49px 0 41px;
 }
 
 .heading-filters-result {
@@ -699,7 +692,7 @@ footer{
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .heading-filters-sort select {
@@ -710,12 +703,13 @@ footer{
   padding: 14px 0 13px 14px;
   border-radius: 4px;
   cursor: pointer;
+  font-family: "PT-Sans", sans-serif;
 }
 .text-price{
   font-size: 18px;
   line-height: 21px;
 }
-.catalog-filter-list, catalog-filter-radio-list, catalog-filter-label, catalog-filter-group, catalog-filter-nobutton{
+.catalog-filter-list, .catalog-filter-radio-list, .catalog-filter-label, .catalog-filter-group, .catalog-filter-nobutton{
   margin-top: 32px;
 }
 .range-scale {
@@ -809,7 +803,7 @@ footer{
   left: 0;
   width: 14px;
   height: 14px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 4px;
   border: 3px solid;
 }
@@ -903,7 +897,7 @@ fieldset{
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 6px;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .catalog-filter-price-buttons{
@@ -979,7 +973,7 @@ fieldset{
 
 .breadcrumbs-link{
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 .breadcrumbs-link:hover{
   color: #FFFFFF99;
@@ -1035,7 +1029,7 @@ input[type="checkbox"]:active{
   border-radius: 4px;
   cursor: pointer;
   padding: 8px 50px;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .catalog-filter-nobutton{
@@ -1049,7 +1043,7 @@ input[type="checkbox"]:active{
   border: 3px solid transparent;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 .catalog-filter-nobutton:hover{
   color: rgba(255, 255, 255, 0.3);
@@ -1080,7 +1074,7 @@ input[type="checkbox"]:active{
 
 .heading-filters{
   float: left;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .filters{
@@ -1106,7 +1100,7 @@ input[type="checkbox"]:active{
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  padding: 0px 70px 40px;
+  padding: 0 70px 40px;
   list-style: none;
   margin: 0 auto;
   max-width: 1200px;
@@ -1146,7 +1140,7 @@ input[type="checkbox"]:active{
   padding: 0;
   text-align: start;
   font-weight: 700;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
 
@@ -1199,10 +1193,10 @@ input[type="checkbox"]:active{
   text-decoration: none;
   border: none;
   border-radius: 4px;
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 .catalog-item-favourites{
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1212,6 +1206,7 @@ input[type="checkbox"]:active{
   text-decoration: none;
   border-radius: 4px;
   border: none;
+  font-family: "PT-Sans", sans-serif;
 }
 
 .catalog-item-rating{
@@ -1261,29 +1256,6 @@ input[type="checkbox"]:active{
   color: #83B3D3;
 }
 
-/*Данные два класса нужны для одной и пяти звёзд у отелей*/
-/*.one-star::after{*/
-/*  content: "M";*/
-/*  font-family: "Tick", sans-serif;*/
-/*  display: block;*/
-/*  width: 18px;*/
-/*  height: 17px;*/
-/*  z-index: 3;*/
-/*  margin-top: 5px;*/
-/*  position: absolute;*/
-/*  color: #83B3D3;*/
-/*}*/
-/*.five-stars::after{*/
-/*  content: "MMMMMM";*/
-/*  font-family: "Tick", sans-serif;*/
-/*  display: block;*/
-/*  width: 18px;*/
-/*  height: 17px;*/
-/*  z-index: 3;*/
-/*  margin-top: 5px;*/
-/*  position: absolute;*/
-/*  color: #83B3D3;*/
-/*}*/
 /*пагинация*/
 .catalog-pages {
   padding: 40px 0;
@@ -1296,8 +1268,7 @@ input[type="checkbox"]:active{
   gap: 10px;
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-left: 70px;
+  margin: 0 0 0 70px;
   flex-wrap: wrap;
 }
 
@@ -1403,12 +1374,11 @@ input[type="checkbox"]:active{
 }
 
 .modal-title{
-  margin: 0;
-  margin-bottom: 76px;
-  font-family: 'PT-Sans', sans-serif;
+  margin: 0 0 76px 0;
+  font-family: "PT-Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
 }
 .modal-form{
@@ -1421,7 +1391,7 @@ input[type="checkbox"]:active{
   display: none;
 }
 .field-label{
-  font-family: 'PT-Sans', sans-serif;
+  font-family: "PT-Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1433,7 +1403,7 @@ input[type="checkbox"]:active{
 }
 .error{
   position: absolute;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT-Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1445,12 +1415,12 @@ input[type="checkbox"]:active{
 }
 .yes-rooms{
   position: absolute;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT-Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   vertical-align: middle;
-  color: #333;
+  color: #333333;
   top: 297px;
   left: 227px;
   text-align: center;
@@ -1475,7 +1445,7 @@ input[type="checkbox"]:active{
   font-size: 18px;
   line-height: 24px;
   vertical-align: middle;
-  color: #000;
+  color: #000000;
   margin-top: -11px;
 }
 .field-input-date:hover{
@@ -1523,7 +1493,7 @@ input[type="checkbox"]:active{
   font-size: 18px;
   line-height: 24px;
   vertical-align: middle;
-  color: #000;
+  color: #000000;
 }
 
 .field-input-numbers:disabled{
@@ -1549,9 +1519,7 @@ input[type="checkbox"]:active{
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: date-of-out;
-  margin: 0;
-  margin-top: 48px;
-  margin-bottom: 46px;
+  margin: 48px 0 46px 0;
 }
 .field-group-numbers{
   display: flex;
@@ -1583,41 +1551,41 @@ input[type="checkbox"]:active{
 .minus-kids{
   margin-right: 27px;
 }
-.plus-button::after{
-  content: 'K';
-  font-family: "Tick";
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  color: #7561574D;
-  top: 18px;
-  left: 0;
-  cursor: pointer;
-}
-.minus-button {
-  height: 48px;
-  width: 30px;
-  margin-top: -17px;
-  border: none;
-  background-color: #F2F2F2;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  position: relative;
-  cursor: pointer;
-}
-.minus-button::after{
-  content: 'J';
-  font-family: "Tick";
-  display: block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  color: #7561574D;
-  top: 18px;
-  left: 11px;
-  cursor: pointer;
-}
+/*.plus-button::after{*/
+/*  content: 'K';*/
+/*  font-family: "Tick";*/
+/*  display: block;*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  position: absolute;*/
+/*  color: #7561574D;*/
+/*  top: 18px;*/
+/*  left: 0;*/
+/*  cursor: pointer;*/
+/*}*/
+/*.minus-button {*/
+/*  height: 48px;*/
+/*  width: 30px;*/
+/*  margin-top: -17px;*/
+/*  border: none;*/
+/*  background-color: #F2F2F2;*/
+/*  border-top-left-radius: 4px;*/
+/*  border-bottom-left-radius: 4px;*/
+/*  position: relative;*/
+/*  cursor: pointer;*/
+/*}*/
+/*.minus-button::after{*/
+/*  content: 'J';*/
+/*  font-family: "Tick";*/
+/*  display: block;*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  position: absolute;*/
+/*  color: #7561574D;*/
+/*  top: 18px;*/
+/*  left: 11px;*/
+/*  cursor: pointer;*/
+/*}*/
 
 .number-of-people .field-label,
 .number-of-kids .field-label{
@@ -1636,7 +1604,6 @@ input[type="checkbox"]:active{
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: button;
-  margin: 0;
   width: 577px;
   border-radius: 10px;
   padding: 18px 77px;
@@ -1647,7 +1614,7 @@ input[type="checkbox"]:active{
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  margin: 30px 0px 0px;
+  margin: 30px 0 0;
   border: none;
   background-color: #83B3D3;
   color: #ffffff;
@@ -1656,7 +1623,6 @@ input[type="checkbox"]:active{
   display: none;
 }
 /*Тултип*/
-
 .tooltip-toggle {
   border: none;
   padding: 0;
@@ -1668,7 +1634,7 @@ input[type="checkbox"]:active{
   height: 26px;
 }
 .tooltip-text:after {
-  content:'';
+  content:"";
   background-image: url("/images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
@@ -1693,7 +1659,7 @@ input[type="checkbox"]:active{
 }
 .tooltip-text {
   background-color: #333333;
-  box-shadow: 0px 15px 30px 0px #0000004D;
+  box-shadow: 0 15px 30px 0 #0000004D;
   color: #ffffff;
   padding: 21px 18px 23px 22px;
   border-radius: 10px;
