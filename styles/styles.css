@@ -45,11 +45,13 @@ body{
   max-width: 1200px;
   margin: 0 auto;
   flex-grow: 1;
+  text-align: center;
 }
 
-footer{
+.footer-container{
   margin: 0 auto;
   padding: 0 60px;
+  max-width: 1200px;
 }
 .logo{
   display: block;
@@ -207,9 +209,6 @@ footer{
   left: 0;
   margin: auto;
   fill: #000000;
-}
-main{
-  text-align: center;
 }
 .for-main{
   top: 428px;
@@ -429,11 +428,6 @@ main{
   text-transform: uppercase;
   font-weight: 700;
   font-family: "PT-Sans", sans-serif;
-}
-
-footer{
-  width: 1200px;
-  align-self: center;
 }
 
 .placeholder-emails{
