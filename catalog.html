@@ -130,10 +130,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 10px; width: 210px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену</span>
                       </button>
                     </div>
@@ -148,13 +148,15 @@
           </form>
       </section>
       <section class="heading-filters">
-        <div class="heading-filters-container">
+        <div class="heading-filters-container ">
           <h2 class="heading-filters-result">Найдено гостиниц: 38</h2>
-            <label for="price" class="visually-hidden">Сортировка</label>
-            <select name="heading-filters-price text-price" id="price">
-              <option class="text-price" value="mix-price">Сначала дешёвые</option>
-              <option class="text-price" value="max-price">Сначала дорогие</option>
-            </select>
+            <div class="heading-filters-sort">
+              <label for="price" class="visually-hidden">Сортировка</label>
+              <select name="heading-filters-price text-price" id="price">
+                <option class="text-price" value="mix-price">Сначала дешёвые</option>
+                <option class="text-price" value="max-price">Сначала дорогие</option>
+              </select>
+            </div>
           <div class="filters-view">
             <a class="heading-filters-viewbutton" href="catalog.html?view=tile">
               <span class="visually-hidden">Плитками</span>
@@ -179,7 +181,7 @@
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 4000₽</span>
             <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button class="catalog-item-favourites button-blue" type="submit" >В избранное</button>
+            <button class="catalog-item-favourites button-blue" type="button" >В избранное</button>
             <div class="four-stars">
               <p class="visually-hidden">4 звезды</p>
             </div>
@@ -191,7 +193,7 @@
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 5000₽</span>
             <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button type="submit" class="catalog-item-favourite button-green">В избранном</button>
+            <button class="catalog-item-favourite button-green" type="button" >В избранном</button>
             <div class="four-stars">
               <p class="visually-hidden">4 звезды</p>
             </div>
@@ -202,8 +204,8 @@
             <h2 class="catalog-item-heading">Desert Quail Inn</h2>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 2500₽</span>
-            <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button class="catalog-item-favourites button-blue" type="submit" >В избранное</button>
+            <a class="catalog-item-information button-brown" href="#" >Подробнее</a>
+            <button class="catalog-item-favourites button-blue" type="button" >В избранное</button>
             <div class="three-stars">
               <p class="visually-hidden">3 звезды</p>
             </div>
@@ -214,8 +216,8 @@
             <h2 class="catalog-item-heading">GreenTree Inn</h2>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 1500₽</span>
-            <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button class="catalog-item-favourites button-blue" type="submit" >В избранное</button>
+            <a class="catalog-item-information button-brown" href="#" >Подробнее</a>
+            <button class="catalog-item-favourites button-blue" type="button" >В избранное</button>
             <div class="two-stars">
               <p class="visually-hidden">2 звезды</p>
             </div>
@@ -249,21 +251,21 @@
         <section class="footer-socials">
           <h3 class="visually-hidden">Наши социальные сети</h3>
           <ul class="footer-socials-list">
-            <a class="button-blue-icon socials-link" href="https://vk.com/htmlacademy" >
-              <li class="footer-socials-item">
+            <li class="footer-socials-item">
+              <a class="button-blue-icon socials-link" href="https://vk.com/htmlacademy" >
                 <span class="visually-hidden">ВКонтакте</span>
-              </li>
-            </a>
-            <a class="button-blue-icon socials-link" href="https://t.me/htmlacademy">
-              <li class="footer-socials-item">
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="button-blue-icon socials-link" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
-              </li>
-            </a>
-            <a class="button-blue-icon socials-link" href="https://www.youtube.com/user/htmlacademyru">
-              <li class="footer-socials-item">
+              </a>
+            </li>
+            <li class="footer-socials-item">
+              <a class="button-blue-icon socials-link" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </section>
         <section class="footer-phone">
