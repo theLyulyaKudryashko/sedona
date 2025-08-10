@@ -799,6 +799,12 @@ body{
   -webkit-appearance: none;
   appearance: none;
 }
+.input-left::-webkit-outer-spin-button,
+.input-left::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .control {
   position: relative;
   display: block;
