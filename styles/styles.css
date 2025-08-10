@@ -198,9 +198,10 @@ body{
   background-color: #756157;
   color: #ffffff;
   text-transform: uppercase;
+  font-weight: 700;
   border-radius: 4px;
   padding: 8px 37px;
-  margin: 14px 70px 0 0;
+  margin: 14px 41px 14px -1px;
   font-size: 16px;
   display: block;
   font-family: "PT-Sans", sans-serif;
@@ -208,6 +209,7 @@ body{
   text-decoration: none;
   position: relative;
   line-height: 20px;
+  border: none;
 }
 .navigation-icon{
   position: absolute;
@@ -256,7 +258,7 @@ body{
 
 .text-heading-interest{
   padding: 0;
-  margin: 20px 0 59px 0;
+  margin: 20px 0 32px 0;
   font-size: 22px;
   line-height: 26px;
 }
@@ -380,7 +382,7 @@ body{
 }
 .advantages-title-live{
   padding: 0;
-  margin: 26px 85px 30px;
+  margin: 28px 85px 30px;
   font-weight: 700;
   font-family: "PT-Sans", sans-serif;
   text-transform: uppercase;
@@ -419,8 +421,8 @@ body{
   display: block;
   font-size: 20px;
   line-height: 36px;
-  padding: 10px 50px 16px;
-  margin: 54px auto 96px auto;
+  padding: 9px 0 9px;
+  margin: 51px auto auto auto;
   background-color: #756157;
   color: #ffffff;
   text-decoration: none;
@@ -431,7 +433,7 @@ body{
   max-width: 376px;
 }
 .interest{
-  margin: 96px 304px 108px;
+  margin: 96px 304px 96px;
 }
 .title-emails{
   font-size: 30px;
@@ -439,10 +441,11 @@ body{
   text-transform: uppercase;
   font-weight: 700;
   font-family: "PT-Sans", sans-serif;
+  margin-bottom: 10px;
 }
 
 .placeholder-emails{
-  padding: 14px 244.5px 14px 20px;
+  padding: 14px 233.5px 14px 20px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
@@ -472,6 +475,7 @@ body{
 .footer-adress{
   display: flex;
   margin-top: 40px;
+  margin-bottom: 17px;
 }
 .footer-socials-list{
   display: flex;
@@ -546,9 +550,18 @@ body{
 .mails-no-background{
   padding-top: 95px;
 }
+.footer-email{
+  display: flex;
+  margin: 0 258px;
+}
 .description-mails{
   font-size: 22px;
-  margin: 0 362.5px 60px 362.5px;
+  margin: 21px 362.5px 54px 362.5px;
+  line-height: 26px;
+}
+.form-email{
+  display: flex;
+  margin: 0 258px;
 }
 .mails-background{
   background-image: url("/images/subcribtion-email-background.jpg");
@@ -668,7 +681,7 @@ body{
   margin-right: auto;
   flex-direction: row;
   gap: 32px;
-  padding: 35px 70px 55px 70px;
+  padding: 32px 70px 55px 70px;
   min-width: 1060px;
 }
 .filter-container{
@@ -692,7 +705,7 @@ body{
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 49px 0 41px;
+  padding: 49px 0 0;
 }
 
 .heading-filters-result {
@@ -824,26 +837,34 @@ body{
 }
 .control-input[type="checkbox"]:checked + .control-mark::before{
   position: absolute;
-  font-family: "Tick", serif;
-  content: "C";
+  background-image: url("/images/checkbox.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  content: "";
   color: #3F5E72;
   z-index: 1;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   top: -3px;
-  left: -2px;
+  left: -3px;
 }
 
 .control:hover .control-mark {
+  opacity: 0.6;
+}
+.control-input:active + .control-mark {
+  opacity: 0.3;
+}
+.control-input:focus + .control-mark {
   border:3px solid #83B3D3;
 }
-
-.control-input:active + .control-mark {
+.control-input:focus {
   border:3px solid #83B3D3;
 }
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
+
 .control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   top: 2px;
@@ -853,6 +874,9 @@ body{
   background-color: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+.control-input[type="radio"]:focus {
+  border:3px solid #83B3D3;
 }
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
@@ -865,10 +889,11 @@ body{
   position: relative;
   gap: 2px;
   padding-inline-start: 0;
+  margin-top: 36px;
 }
 .filters-view {
   display: flex;
-  gap: 8px;
+  gap: 7px;
   margin-left: 52px;
 }
 fieldset{
@@ -877,12 +902,15 @@ fieldset{
   border: none;
 }
 .heading-filters-viewbutton {
-  width: 48px;
-  height: 48px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
   border: 2px solid #E5E5E5;
   position: relative;
+}
+.filters-view-now{
+  border: 2px solid #000000;
 }
 .view-button-icon{
   position: absolute;
@@ -917,7 +945,7 @@ fieldset{
 }
 
 .catalog-filter-price-buttons{
-  margin-top: 56px;
+  margin-top: 58px;
   margin-left: 60px;
 }
 .catalog-filter-label {
@@ -1111,14 +1139,14 @@ input[type="checkbox"]:active{
 /*сами карточки*/
 .catalog-pages-list{
   border-bottom: 1px solid #e5e5e5;
+  padding: 0 70px 25px;
 }
 .catalog-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  padding: 0 70px 40px;
   list-style: none;
-  margin: 0 auto;
+  margin-top: 139px;
   max-width: 1200px;
   padding-inline-start: 0;
 }
@@ -1131,7 +1159,7 @@ input[type="checkbox"]:active{
   flex-wrap: wrap;
   border: 1px solid #e6e6e6;
   justify-content: center;
-  padding: 17px;
+  padding: 16px;
   max-width: 340px;
   font-weight: 400;
   font-size: 18px;
@@ -1143,10 +1171,10 @@ input[type="checkbox"]:active{
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: image;
-  margin: 0;
   padding: 0;
   object-fit: contain;
   max-width: 300px;
+  margin-top: 4px;
 }
 .catalog-item-heading{
   -ms-grid-row: 3;
@@ -1161,10 +1189,6 @@ input[type="checkbox"]:active{
   font-size: 24px;
   line-height: 28px;
 
-}
-.catalog-item-heading, .catalog-item-price, .catalog-item-type, .catalog-item-information, .catalog-item-favourite, .catalog-item-favourites, .catalog-item-rating
-{
-  margin-top: -4px !important;
 }
 
 .catalog-item-information{
@@ -1235,49 +1259,57 @@ input[type="checkbox"]:active{
   background-color: #f2f2f2;
   grid-area: rate;
   justify-self: end;
-  padding:  10px 22px 12px 23px;
+  padding: 10px 22px 8px 23px;
   border-radius: 4px;
 }
-
+.four-stars{
+  position: relative;
+}
 .four-stars::after{
-  content: "MMMM";
-  font-family: "Tick", sans-serif;
+  content: "";
+  background-image: url(/images/4-stars.svg);
   display: block;
-  width: 18px;
-  height: 17px;
+  width: 140px;
+  height: 37px;
   z-index: 3;
-  margin-top: 5px;
   position: absolute;
   color: #83B3D3;
+  top: -4px;
+}
+.three-stars{
+  position: relative;
 }
 .three-stars::after{
-  content: "MMM";
-  font-family: "Tick", sans-serif;
+  content: "";
+  background-image: url(/images/3-stars.svg);
   display: block;
-  width: 18px;
-  height: 17px;
+  width: 140px;
+  height: 37px;
   z-index: 3;
-  margin-top: 5px;
   position: absolute;
   color: #83B3D3;
+  top: -4px;
+}
+.two-stars{
+  position: relative;
 }
 .two-stars::after{
-  content: "MM";
-  font-family: "Tick", sans-serif;
+  content: "";
+  background-image: url(/images/2-stars.svg);
   display: block;
-  width: 18px;
-  height: 17px;
+  width: 140px;
+  height: 37px;
   z-index: 3;
-  margin-top: 5px;
   position: absolute;
   color: #83B3D3;
+  top: -4px;
 }
 
-/*пагинация*/
-.catalog-pages {
-  padding: 40px 0;
-  text-align: center;
+.catalog-item-heading, .catalog-item-price, .catalog-item-type, .catalog-item-information, .catalog-item-favourite, .catalog-item-favourites, .catalog-item-rating
+{
+  margin-top: -4px;
 }
+/*пагинация*/
 
 .catalog-pages-lis {
   display: flex;
@@ -1290,14 +1322,13 @@ input[type="checkbox"]:active{
 }
 
 .catalog-pages {
-  padding: 33px 0;
+  padding: 37px 0;
   text-align: center;
 }
-
 .catalog-pages-link {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 38px;
   line-height: 40px;
   font-weight: 700;
   font-size: 20px;
