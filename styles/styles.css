@@ -1571,69 +1571,57 @@ input[type="checkbox"]:active{
 }
 .field-group-numbers{
   display: flex;
+  margin-top: 19px;
 }
 .field-input-numbers{
   border: none;
-  width: 31px;
+  width: 90px;
   padding: 14px 10px;
   background-color: #F2F2F2;
   height: 20px;
   margin-top: -17px;
   text-align: center;
+  border-radius: 4px;
+  position: relative;
 }
 
 .plus-button {
-  height: 48px;
-  width: 30px;
-  margin-top: -17px;
-  border: none;
-  background-color: #F2F2F2;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  position: relative;
+  height: 20px;
+  width: 20px;
+  display: block;
+  mask-image: url(/images/plus.svg);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #7561574D;
+  position: absolute;
+  left: 287px;
+  top: 371px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.minus-button {
+  height: 20px;
+  width: 20px;
+  mask-image: url("/images/line.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #7561574D;
+  position: absolute;
+  left: 217px;
+  top: 371px;
+  z-index: 1;
+  display: block;
   cursor: pointer;
 }
 .plus-kids{
-  left: 0;
+  left: 212px;
+  top: -2px;
 }
 .minus-kids{
-  margin-right: 27px;
+  left: 141px;
+  top: -2px;
 }
-/*.plus-button::after{*/
-/*  content: 'K';*/
-/*  font-family: "Tick";*/
-/*  display: block;*/
-/*  width: 20px;*/
-/*  height: 20px;*/
-/*  position: absolute;*/
-/*  color: #7561574D;*/
-/*  top: 18px;*/
-/*  left: 0;*/
-/*  cursor: pointer;*/
-/*}*/
-/*.minus-button {*/
-/*  height: 48px;*/
-/*  width: 30px;*/
-/*  margin-top: -17px;*/
-/*  border: none;*/
-/*  background-color: #F2F2F2;*/
-/*  border-top-left-radius: 4px;*/
-/*  border-bottom-left-radius: 4px;*/
-/*  position: relative;*/
-/*  cursor: pointer;*/
-/*}*/
-/*.minus-button::after{*/
-/*  content: 'J';*/
-/*  font-family: "Tick";*/
-/*  display: block;*/
-/*  width: 20px;*/
-/*  height: 20px;*/
-/*  position: absolute;*/
-/*  color: #7561574D;*/
-/*  top: 18px;*/
-/*  left: 11px;*/
-/*  cursor: pointer;*/
-/*}*/
 
 .number-of-people .field-label,
 .number-of-kids .field-label{
@@ -1641,7 +1629,7 @@ input[type="checkbox"]:active{
   margin-top: -5px;
 }
 .number-of-kids{
-  margin-left: 87px;
+  margin-left: 86px;
   position: relative;
 }
 .number-of-kids .field-label{
@@ -1703,7 +1691,7 @@ input[type="checkbox"]:active{
   top: -10px;
 }
 .field-input-kids{
-  margin-left: -28px;
+  margin-left: 1px;
 }
 .tooltip-text {
   background-color: #333333;
