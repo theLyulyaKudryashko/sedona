@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico" sizes="32x32">
   </head>
-  <body>
+  <body class="body-container">
     <header class="page-header">
       <nav class="navigation">
         <div class="logo-container">
@@ -22,7 +22,7 @@
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item nav-left">
-            <a class="navigation-link" href="">Гостиницы</a>
+            <a class="navigation-link navigation-link-now" href="">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list nav-right">
@@ -40,7 +40,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class=" button-go button-brown" href="#">Хочу сюда</a>
+            <a class=" button-go button-brown" href="new-page.html">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -51,9 +51,8 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link home" href="index.html">
                   <span class="visually-hidden">Главная</span>
-                  <svg class="breadcrumbs-home" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none" viewBox="0 0 13 13"><path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/><path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z"/></svg>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -130,10 +129,10 @@
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 10px; width: 210px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену</span>
                       </button>
                     </div>
@@ -142,82 +141,82 @@
               </fieldset>
               <div class="catalog-filter-price-buttons">
                 <button class="catalog-filter-yesbutton button-blue" type="submit">Применить</button>
-                <button class="catalog-filter-nobutton" type="submit">Сбросить</button>
+                <button class="catalog-filter-nobutton" type="reset">Сбросить</button>
               </div>
             </div>
           </form>
       </section>
       <section class="heading-filters">
-        <div class="heading-filters-container">
+        <div class="heading-filters-container ">
           <h2 class="heading-filters-result">Найдено гостиниц: 38</h2>
-          <form class="heading-filters-sort">
-            <label for="price" class="visually-hidden">Сортировка</label>
-            <select name="heading-filters-price text-price" id="price">
-              <option class="text-price" value="mix-price">Сначала дешёвые</option>
-              <option class="text-price" value="max-price">Сначала дорогие</option>
-            </select>
-          </form>
+            <div class="heading-filters-sort">
+              <label for="price" class="visually-hidden">Сортировка</label>
+              <select name="heading-filters-price text-price" id="price">
+                <option class="text-price" value="mix-price">Сначала дешёвые</option>
+                <option class="text-price" value="max-price">Сначала дорогие</option>
+              </select>
+            </div>
           <div class="filters-view">
-            <button class="heading-filters-viewbutton" type="submit" name="see-by-groups">
-              <span class="visually-hidden">Группами</span>
+            <a class="heading-filters-viewbutton filters-view-now" href="catalog.html?view=tile">
+              <span class="visually-hidden">Плитками</span>
               <svg class="view-button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
-            </button>
-            <button class="heading-filters-viewbutton" type="submit" name="see-by-big">
+            </a>
+            <a class="heading-filters-viewbutton" href="catalog.html?view=card">
               <svg class="view-button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="a2"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
-              <span class="visually-hidden">С развёрнутым описанием</span>
-            </button>
-            <button class="heading-filters-viewbutton" type="submit" name="see-by-list">
+              <span class="visually-hidden">Карточками</span>
+            </a>
+            <a class="heading-filters-viewbutton" href="catalog.html?view=list">
               <svg class="view-button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none" viewBox="0 0 16 14"><g fill="#000" clip-path="url(#a)"><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="a1"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
               <span class="visually-hidden">Списком</span>
-            </button>
+            </a>
           </div>
         </div>
       </section>
       <section class="catalog-pages-list">
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img class="catalog-image" src="images/amara-resort-and-spa-photo.jpg" alt="Пещера" >
+            <img class="catalog-image" src="images/amara-resort-and-spa-photo.jpg" alt="Пещера" width="300" height="212">
             <h2 class="catalog-item-heading">Amara Resort & Spa</h2>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 4000₽</span>
             <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button class="catalog-item-favourites button-blue" type="submit" >В избранное</button>
+            <button class="catalog-item-favourites button-blue" type="button" >В избранное</button>
             <div class="four-stars">
               <p class="visually-hidden">4 звезды</p>
             </div>
             <span class="catalog-item-rating">Рейтинг: 8,5</span>
           </li>
           <li class="catalog-item">
-            <img class="catalog-image" src="/images/Villas-at-Poco-Diablo-photo.jpg" alt="Скалистые горы" >
+            <img class="catalog-image" src="/images/villas-at-poco-diablo-photo.jpg" alt="Скалистые горы" width="300" height="212">
             <h2 class="catalog-item-heading">Villas at Poco Diablo</h2>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 5000₽</span>
             <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button type="submit" class="catalog-item-favourite button-green">В избранном</button>
+            <button class="catalog-item-favourite button-green" type="button" >В избранном</button>
             <div class="four-stars">
               <p class="visually-hidden">4 звезды</p>
             </div>
             <span class="catalog-item-rating">Рейтинг: 9,2</span>
           </li>
           <li class="catalog-item">
-            <img class="catalog-image" src="images/Desert-Quail-Inn-photo.jpg" alt="Пещера" >
+            <img class="catalog-image" src="images/desert-quail-inn-photo.jpg" alt="Горы в Ред Рок" width="300" height="212">
             <h2 class="catalog-item-heading">Desert Quail Inn</h2>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 2500₽</span>
-            <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button class="catalog-item-favourites button-blue" type="submit" >В избранное</button>
+            <a class="catalog-item-information button-brown" href="#" >Подробнее</a>
+            <button class="catalog-item-favourites button-blue" type="button" >В избранное</button>
             <div class="three-stars">
               <p class="visually-hidden">3 звезды</p>
             </div>
             <span class="catalog-item-rating">Рейтинг: 6,9</span>
           </li>
           <li class="catalog-item">
-            <img class="catalog-image" src="images/GreenTreenn-photo.jpg" alt="Пещера">
+            <img class="catalog-image" src="images/greentreenn-photo.jpg" alt="Ночной пейзаж гор в парке Сион" width="300" height="212">
             <h2 class="catalog-item-heading">GreenTree Inn</h2>
             <span class="catalog-item-type">Гостиница</span>
             <span class="catalog-item-price">От 1500₽</span>
-            <a href="#" class="catalog-item-information button-brown">Подробнее</a>
-            <button class="catalog-item-favourites button-blue" type="submit" >В избранное</button>
+            <a class="catalog-item-information button-brown" href="#" >Подробнее</a>
+            <button class="catalog-item-favourites button-blue" type="button" >В избранное</button>
             <div class="two-stars">
               <p class="visually-hidden">2 звезды</p>
             </div>
@@ -237,11 +236,11 @@
         </ol>
       </section>
     </main>
-    <footer>
+    <footer class="footer-container">
       <section class="mails-index mails-no-background">
         <h2 class="title-emails">Подпишитесь на рассылку</h2>
         <p class="description-mails">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="footer-email" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="form-email">Введите ваш email</label>
           <input class="placeholder-emails placeholder-emails-no-background-image" type="email" placeholder="Ваш e-mail" id="form-email" name="form-email" required >
           <button class="button-mails button-blue" type="submit" >Подписаться</button>
@@ -273,7 +272,7 @@
           <a class="phone" href="tel:+78128121212" >+7 (812) 812-12-12</a>
         </section>
         <div class="footer-html">
-          <a class="footer-link-html" href="https://htmlacademy.ru/profile/thelylyakydryashko">
+          <a class="footer-link-html" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="images/html-academy-logo.svg" alt="Логотип HTMl-Academy" width="115" height="33">
           </a>
         </div>
