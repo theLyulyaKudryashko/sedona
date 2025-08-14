@@ -705,7 +705,7 @@ body{
   display: flex;
   align-items: center;
   gap: 20px;
-  padding: 49px 0 0;
+  padding: 51px 0 0;
 }
 
 .heading-filters-result {
@@ -722,7 +722,7 @@ body{
   line-height: 21px;
   width: 290px;
   border: 2px solid #E5E5E5;
-  padding: 14px 0 13px 14px;
+  padding: 9px 0 11px 14px;
   border-radius: 4px;
   cursor: pointer;
   font-family: "PT-Sans", sans-serif;
@@ -828,7 +828,7 @@ body{
 .control-mark {
   position: absolute;
   top: 2px;
-  left: 0;
+  left: 1px;
   width: 14px;
   height: 14px;
   background-color: #ffffff;
@@ -1174,7 +1174,7 @@ input[type="checkbox"]:active{
   padding: 0;
   object-fit: contain;
   max-width: 300px;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 .catalog-item-heading{
   -ms-grid-row: 3;
