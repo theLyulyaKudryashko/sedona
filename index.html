@@ -56,16 +56,16 @@
       <p class="text-heading-advantages">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       <div class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages-item advantages-combo">
+          <div class="advantages-text advantages-blue">
+            <h3 class="advantages-title-combo text-white">Настоящий городок</h3>
+            <p class="advantages-description text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <div class="advantages-image-1">
+            <img class="advantages-image" src="images/photo-cafe-sedona.jpg" alt="Пейзаж в Седоне" height="385" width="800">
+          </div>
+        </div>
         <ul class="advantages-list">
-          <li class="advantages-item advantages-combo">
-            <div class="advantages-text advantages-blue">
-              <h3 class="advantages-title-combo text-white">Настоящий городок</h3>
-              <p class="advantages-description text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            </div>
-            <div class="advantages-image-1">
-              <img class="advantages-image" src="images/photo-cafe-sedona.jpg" alt="Пейзаж в Седоне" height="385" width="800">
-            </div>
-          </li>
           <li class="advantages-item">
             <div class="advantages-text">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -84,16 +84,16 @@
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
-          <li class="advantages-item advantages-combo">
-             <div class="advantages-image-2">
-             <img class="advantages-image" src="images/photo-grand-canyon.jpg" alt="Каньон в Седоне" height="385" width="800">
-            </div>
-            <div class="advantages-text advantages-blue">
+        </ul>
+        <div class="advantages-item advantages-combo">
+          <div class="advantages-image-2">
+            <img class="advantages-image" src="images/photo-grand-canyon.jpg" alt="Каньон в Седоне" height="385" width="800">
+          </div>
+          <div class="advantages-text advantages-blue">
             <h3 class="advantages-title-combo text-white">Там есть <br>мост дьявола</h3>
             <p class="advantages-description text-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
       <div class="advantagesplace">
         <h2 class="go-here">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
@@ -154,8 +154,8 @@
         </ul>
       </section>
       <section class="footer-phone">
-          <h3 class="visually-hidden">Позвонить нам</h3>
-          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <h3 class="visually-hidden">Позвонить нам</h3>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <div class="footer-html">
         <a class="footer-link-html" href="https://htmlacademy.ru/profile/thelylyakydryashko" >
@@ -174,21 +174,27 @@
             Поиск гостиницы в Седоне
           </h2>
           <form class="modal-form" action="http://echo.htmlacademy.ru" method="post">
-            <p class="field-group auth-for-user date-of-in">
-              <label class="field-label" for="date-of-go-in">Дата Заезда:</label>
-              <input class="field-input-date" placeholder="Укажите дату" type="text" id="date-of-go-in">
-            <p class="field-description error">Мы не можем отправить вас в прошлое.</p>
-            <p class="field-group auth-for-user date-of-out">
+            <div class="field-group auth-for-user date-of-in">
+             <label class="field-label" for="date-of-go-in">Дата Заезда:</label>
+             <div class="field-input">
+              <input class="field-input-date" placeholder="27 апреля 2020" type="text" id="date-of-go-in" name="date-in">
+              <p class="field-description error">Мы не можем отправить вас в прошлое.</p>
+             </div>
+            </div>
+            <div class="field-group auth-for-user date-of-out">
               <label class="field-label" for="date-of-go-out">Дата Выезда:</label>
-              <input class="field-input-date field-date-out" placeholder="Укажите дату" type="text" id="date-of-go-out" >
-            <p class="field-description yes-rooms">На эти даты есть свободные номера. Пока есть.</p>
+              <div class="field-input">
+                <input class="field-input-date field-date-out" placeholder="1 сентября 2023" type="text" id="date-of-go-out" name="date-out">
+                <p class="field-description yes-rooms">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+            </div>
             <div class="numbers">
               <p class="field-group-numbers auth-for-user number-of-people">
                 <label class="field-label" for="number-of-people">Взрослые:</label>
                 <button class="minus-button" value="minus-people" type="button">
                   <span class="visually-hidden">Убрать количество людей</span>
                 </button>
-                <input class="field-input-numbers" id="number-of-people" placeholder="2" type="number" name="date" required>
+                <input class="field-input-numbers" id="number-of-people" placeholder="2"  type="text" pattern="[0-9]*" name="num-people" required>
                 <button class="plus-button"  value="plus-people" type="button">
                   <span class="visually-hidden">Добавить количество людей</span>
                 </button>
@@ -204,7 +210,7 @@
                 <button class="minus-button minus-kids" value="minus-people" type="button">
                   <span class="visually-hidden">Убрать количество людей</span>
                 </button>
-                <input class="field-input-numbers field-input-kids" id="number-of-kids" placeholder="2" type="number" name="date" required>
+                <input class="field-input-numbers field-input-kids" id="number-of-kids" placeholder="2" type="text" pattern="[0-9]*" name="num-kids" required>
                 <button class="plus-button  plus-kids"  value="plus-people" type="button">
                   <span class="visually-hidden">Добавить количество людей</span>
                 </button>

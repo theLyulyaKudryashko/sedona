@@ -51,7 +51,7 @@
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link home" href="index.html">
+                <a class="breadcrumbs-link home breadcrumbs-link-home" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
@@ -119,11 +119,11 @@
                   <ul class="catalog-filter-price-list">
                     <li>
                       <label class="catalog-filter-label label-1" for="min-price">от </label>
-                      <input class="catalog-filter-input input-left" type="number" name="min-price" id="min-price" placeholder="0">
+                      <input class="catalog-filter-input input-left" type="text" pattern="[0-9]*" name="min-price" id="min-price" placeholder="0">
                     </li>
                     <li>
                       <label class="catalog-filter-label label-2" for="max-price">до </label>
-                      <input class="catalog-filter-input input-right" type="number" name="max-price" id="max-price" placeholder="9000">
+                      <input class="catalog-filter-input input-right" type="text" pattern="[0-9]*" name="max-price" id="max-price" placeholder="9000">
                     </li>
                   </ul>
                 <div class="range">
